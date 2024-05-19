@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     
+</head>
+<body class="index">
+    <div class="wrapper">
+    <header class="l-header p-header">
+        <p class="p-header__ttl c-title">Hamburger</p>
+        <button class="p-header__btn c-navButton">Menu</button>
+        <div class="p-header__search">
+            <form action="" class="p-headerSearch__form" >
+                <input class="p-headerSearch__input c-input" type="search">
+                <p class="headerSearch__icon"><img src="./img/search__icon.png" alt="ルーペアイコン" width="24px" height="24px"></p>
+                <button class="headerSearch__btn c-button" type="button" >検索</button>
+            </form>
+        </div>
+    </header>
+    <main class="l-main">メインカラム</main>
+    <aside class="l-sidebar">
+        <div class="c-nav">
+            <h2 class="c-nav__ttl">Menu</h2>
+            <nav class="c-navMenu">
+                <ul class="c-navMenu__list">
+                    <li class="c-navMenu__item">バーガー
+                        <ul class="c-subMenu__list">
+                            <li class="c-subMenu">ハンバーガー</li>
+                            <li class="c-subMenu">チーズバーガー</li>
+                            <li class="c-subMenu">テリヤキバーガー</li>
+                            <li class="c-subMenu">アボガドバーガー</li>
+                            <li class="c-subMenu">フィッシュバーガー</li>
+                            <li class="c-subMenu">ベーコンバーガー</li>
+                            <li class="c-subMenu">チキンバーガー</li>
+                        </ul>
+                    </li>
+                    <li class="c-navMenu__item">サイド
+                        <ul class="c-subMenu__list">
+                            <li class="c-subMenu">ポテト</li>
+                            <li class="c-subMenu">サラダ</li>
+                            <li class="c-subMenu">ナゲット</li>
+                            <li class="c-subMenu">コーン</li>
+                        </ul>
+                    </li>
+                    <li class="c-navMenu__item">ドリンク
+                        <ul class="c-subMenu__list">
+                            <li class="c-subMenu">コーラ</li>
+                            <li class="c-subMenu">ファンタ</li>
+                            <li class="c-subMenu">オレンジ</li>
+                            <li class="c-subMenu">アップル</li>
+                            <li class="c-subMenu">紅茶（Ice/Hot）</li>
+                            <li class="c-subMenu">コーヒー（Ice/Hot）</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <footer class="l-footer">フッター</footer>
+    </div>
 </body>
 </html>

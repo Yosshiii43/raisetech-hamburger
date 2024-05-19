@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// foundation
+// リセットCSS
+@use "foundation/reset";
+//ベースとなるCSS
+@use "foundation/base";
+
+//layout
+@use "layout/header" as lh;
+@use "layout/main";
+@use "layout/sidebar";
+@use "layout/footer";
+
+//object__component
+@use "object/component/grid";
+@use "object/component/navButton";
+@use "object/component/title";
+@use "object/component/input";
+@use "object/component/button";
+
+//object__project
+@use "object/project/header" as ph;
+
+//object__utility

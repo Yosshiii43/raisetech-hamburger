@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*=======================
+  フッター
+  =======================*/
+@use "../global/forwords" as fw;
+
+.l-footer{
+    background-color: fw.$color--darkBrown;
+    height: fit-content;
+}

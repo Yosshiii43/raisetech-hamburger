@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*=================
+  サーチフォーム
+  =================*/
+@use "../../global/forwords" as fw;
+
+.c-input{
+    border: 1px solid fw.$color--darkGray;
+    border-radius: 10px;
+    background-color: fw.$color--white;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*=======================
+  サイドバー
+  =======================*/
+  @use "../global/forwords" as fw;
+
+  .l-sidebar{
+    display: none;
+    @include fw.mq("pc"){
+      background-color: fw.$color--lightBeige;
+      display: block;
+      height: fit-auto;
+    }
+  }

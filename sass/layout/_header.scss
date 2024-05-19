@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*=======================
+  ヘッダー
+  =======================*/
+@use "../global/forwords" as fw;
+
+.l-header{
+    background-color: fw.$color--middleBeige;
+    display: block;
+    height: fit-content;
+}

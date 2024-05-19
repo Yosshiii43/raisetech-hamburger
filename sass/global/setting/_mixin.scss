@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+$breakpoints: (
+    "sp": "screen and (max-width: 767px)",
+    "tab": "screen and (min-width: 768px)",
+    "pc": "screen and (min-width: 1024px)",
+);
+
+// mixinを定義する（初期値はsp）
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
