@@ -310,16 +310,29 @@ body > .wrapper .l-footer {
   font-size: 4rem;
   line-height: 1.2;
   color: #707070;
-  display: block;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .c-title {
+    font-size: 6.4rem;
+  }
 }
 
 /*=================
-  サーチフォーム
+  サーチボックス
   =================*/
-.c-input {
+.c-searchBox {
+  position: relative;
+}
+.c-searchBox .searchBox__input {
   border: 1px solid #707070;
   border-radius: 10px;
   background-color: #FFFFFF;
+}
+.c-searchBox .searchBox__icon {
+  position: absolute;
+  top: 11px;
+  left: 5px;
 }
 
 /*=================
@@ -338,6 +351,16 @@ body > .wrapper .l-footer {
 .p-header {
   padding-top: 42px;
   padding-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .p-header {
+    padding: 66px 31px 67px 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .p-header__btn {
   position: absolute;
@@ -354,26 +377,47 @@ body > .wrapper .l-footer {
   text-align: center;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 1024px) {
+  .p-header__ttl {
+    margin-bottom: 0;
+    padding: 3.61px 0.5px;
+  }
+}
 .p-header__search {
   display: flex;
   justify-content: center;
 }
-.p-header__search .p-headerSearch__form {
-  position: relative;
+
+/*============================
+  ヘッダー内検索ボックスとボタン
+  ============================*/
+.p-header__search form {
+  width: 318px;
   display: flex;
   justify-content: space-between;
-  width: 318px;
 }
-.p-header__search .p-headerSearch__form .p-headerSearch__input {
+@media screen and (min-width: 768px) {
+  .p-header__search form {
+    width: 546px;
+  }
+}
+.p-header__search form .searchBox__input {
   width: 216px;
   padding: 10px 5px 10px 34px;
 }
-.p-header__search .p-headerSearch__form .headerSearch__icon {
-  position: absolute;
-  top: 11px;
-  left: 5px;
+@media screen and (min-width: 768px) {
+  .p-header__search form .searchBox__input {
+    width: 396px;
+  }
 }
-.p-header__search .p-headerSearch__form .headerSearch__btn {
-  padding: 10px 28px;
+.p-header__search form button {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+@media screen and (min-width: 768px) {
+  .p-header__search form button {
+    padding-left: 51px;
+    padding-right: 51px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

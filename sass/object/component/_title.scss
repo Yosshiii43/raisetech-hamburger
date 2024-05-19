@@ -11,5 +11,8 @@
   font-size: 4rem;
   line-height: 1.2;
   color: fw.$color--darkGray;
-  display: block;
+  display: inline-block;
+  @include fw.mq("pc"){
+    font-size: 6.4rem;
+  }
 }

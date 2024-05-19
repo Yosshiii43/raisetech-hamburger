@@ -16,10 +16,13 @@
 @use "object/component/grid";
 @use "object/component/navButton";
 @use "object/component/title";
-@use "object/component/input";
+@use "object/component/searchBox";
 @use "object/component/button";
+
+
 
 //object__project
 @use "object/project/header" as ph;
+@use "object/project/header__search";
 
 //object__utility

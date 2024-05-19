@@ -1,11 +1,19 @@
 @charset "UTF-8";
 /*=================
-  サーチフォーム
+  サーチボックス
   =================*/
 @use "../../global/forwords" as fw;
 
-.c-input{
+.c-searchBox{
+  position: relative;
+  .searchBox__input{
     border: 1px solid fw.$color--darkGray;
     border-radius: 10px;
     background-color: fw.$color--white;
+  }
+  .searchBox__icon{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+  }
 }

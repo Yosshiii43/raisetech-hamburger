@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*============================
+  ヘッダー内検索ボックスとボタン
+  ============================*/
+
+@use "../../global/forwords" as fw;
+
+.p-header__search{
+    form{
+    width: 318px;
+    display: flex;  
+    justify-content: space-between;
+    @include fw.mq("tab"){
+        width: 546px;
+    }
+    .searchBox__input{
+        width: 216px;
+        padding: 10px 5px 10px 34px ;
+        @include fw.mq("tab"){
+            width: 396px;
+        }
+    }
+    button{
+        padding-left: 28px;
+        padding-right: 28px;
+        @include fw.mq("tab"){
+            padding-left: 51px;
+            padding-right: 51px;
+        }
+    }
+    }
+}
