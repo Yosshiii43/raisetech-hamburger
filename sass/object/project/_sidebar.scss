@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*============================
+  サイドバー
+  ============================*/
+
+@use "../../global/forwords" as fw;
+@use "sass:math";
+body{
+    overflow-x: hidden;
+}
+.p-sidebar{
+    padding: 4.375vw 2.396vw;
+
+}

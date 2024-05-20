@@ -267,6 +267,10 @@ body > .wrapper .l-main {
   }
 }
 
+body > .wrapper .l-sidebar {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
 @media screen and (min-width: 1024px) {
   body > .wrapper .l-sidebar {
     grid-row: 1/3;
@@ -277,27 +281,6 @@ body > .wrapper .l-main {
 body > .wrapper .l-footer {
   grid-row: 3/4;
   grid-column: 1/3;
-}
-
-/*=================
-  ナビゲーションボタン
-  =================*/
-.c-navButton {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-  color: #707070;
-}
-@media screen and (min-width: 768px) {
-  .c-navButton {
-    font-size: 3.4rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .c-navButton {
-    display: none;
-  }
 }
 
 /*=================
@@ -345,11 +328,26 @@ body > .wrapper .l-footer {
   font-weight: 900;
 }
 
+/*==========================
+  ナビ.ゲーションメニュー
+  ==========================*/
+.c-nav__ttl {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .c-nav__ttl {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.4rem;
+  }
+}
+
 /*=======================
   p-header
   =======================*/
 .p-header {
-  padding-top: 42px;
   padding-bottom: 39px;
   display: flex;
   flex-direction: column;
@@ -363,18 +361,20 @@ body > .wrapper .l-footer {
   }
 }
 .p-header__btn {
+  width: 52px;
+  height: 38px;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 7px;
+  right: 6px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .p-header__btn {
-    top: 2opx;
-    right: 20px;
+    display: none;
   }
 }
 .p-header__ttl {
   text-align: center;
+  margin-top: 43px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
@@ -419,5 +419,53 @@ body > .wrapper .l-footer {
     padding-left: 51px;
     padding-right: 51px;
   }
+}
+
+/*=================
+  ナビゲーションボタン
+  =================*/
+.p-navButton > span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: #707070;
+}
+@media screen and (min-width: 768px) {
+  .p-navButton > span {
+    font-size: 3.4rem;
+    line-height: 1.176;
+  }
+}
+.p-navButton.is-open::before, .p-navButton.is-open::after {
+  content: "";
+  width: 42.25px;
+  height: 6px;
+  background: #707070;
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 16px;
+}
+.p-navButton.is-open::before {
+  transform: rotate(45deg);
+}
+.p-navButton.is-open::after {
+  transform: rotate(135deg);
+}
+.p-navButton.is-open > span {
+  display: none;
+}
+
+/*============================
+  サイドバー
+  ============================*/
+body {
+  overflow-x: hidden;
+}
+
+.p-sidebar {
+  padding: 4.375vw 2.396vw;
 }
 /*# sourceMappingURL=style.css.map */

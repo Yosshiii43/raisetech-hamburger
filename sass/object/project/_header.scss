@@ -6,7 +6,6 @@
 @use "../../global/forwords" as fw;
 
 .p-header{
-    padding-top: 42px ;
     padding-bottom: 39px;
     display: flex;
     flex-direction: column;
@@ -17,16 +16,18 @@
         align-items: center;
     }
     &__btn{
+        width: 52px;
+        height: 38px;
         position: absolute;
-        top:8px;
-        right: 8px;
-        @include fw.mq("tab"){
-            top: 2opx;
-            right: 20px;
+        top: 7px;
+        right: 6px;
+        @include fw.mq("pc"){
+            display: none;
         }
     }
     &__ttl{
         text-align: center;
+        margin-top: 43px;
         margin-bottom: 40px;
         @include fw.mq("pc"){
             margin-bottom: 0;

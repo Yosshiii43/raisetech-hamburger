@@ -27,6 +27,8 @@ body > .wrapper .l-main{
 }
 }
 body > .wrapper .l-sidebar{
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
   @include fw.mq("pc"){
   grid-row: 1 / 3;
   grid-column: 2 / 3;

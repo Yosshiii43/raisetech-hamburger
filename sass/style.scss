@@ -9,20 +9,21 @@
 //layout
 @use "layout/header" as lh;
 @use "layout/main";
-@use "layout/sidebar";
+@use "layout/sidebar" as ls;
 @use "layout/footer";
 
 //object__component
 @use "object/component/grid";
-@use "object/component/navButton";
 @use "object/component/title";
 @use "object/component/searchBox";
 @use "object/component/button";
-
+@use "object/component/nav";
 
 
 //object__project
 @use "object/project/header" as ph;
 @use "object/project/header__search";
+@use "object/project/navButton";
+@use "object/project/sidebar" as ps;
 
 //object__utility
