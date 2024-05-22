@@ -6,6 +6,9 @@
 
   .l-sidebar{
     display: none;
+    &.is-open{
+      display: block;
+    } 
     @include fw.mq("pc"){
       background-color: fw.$color--lightBeige;
       display: block;

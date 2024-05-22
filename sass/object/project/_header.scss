@@ -21,6 +21,12 @@
         position: absolute;
         top: 7px;
         right: 6px;
+        @include fw.mq("tab"){
+            width: 92px;
+            height: 40px;
+            top:20px;
+            right: 20px;
+        }
         @include fw.mq("pc"){
             display: none;
         }
@@ -30,6 +36,7 @@
         margin-top: 43px;
         margin-bottom: 40px;
         @include fw.mq("pc"){
+            margin-top: 0;
             margin-bottom: 0;
             padding: 3.61px 0.5px;
         }
