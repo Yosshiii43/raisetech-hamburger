@@ -20,7 +20,7 @@
         height: 38px;
         position: absolute;
         top: 7px;
-        right: 6px;
+        right: 6px;z-index: 1000;
         @include fw.mq("tab"){
             width: 92px;
             height: 40px;

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*==========================
+  ナビ.ゲーションメニュー
+  ==========================*/
+  @use "../../global/forwords" as fw;
+
+  .p-nav__list{
+    .p-nav__item{
+      font-size: 2.4rem;
+      font-weight: 700;
+      .subMenu__list{
+        margin-top: 40px;
+        @include fw.mq("tab"){
+          margin-top: 32px;
+        }
+        .subMenu__item{
+          margin-left: 20px;
+          font-size: 2.0rem;
+          font-weight: 400;
+        }
+        .subMenu__item~.subMenu__item{
+          margin-top: 20px;
+        }
+      }
+    }
+    .p-nav__item~.p-nav__item{
+    margin-top: 60px;
+      @include fw.mq("tab"){
+        margin-top: 48px;
+      }
+    }
+  }

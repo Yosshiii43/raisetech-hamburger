@@ -5,13 +5,8 @@
   @use "../global/forwords" as fw;
 
   .l-sidebar{
-    display: none;
-    &.is-open{
-      display: block;
-    } 
+      height: 100vh;
     @include fw.mq("pc"){
-      background-color: fw.$color--lightBeige;
-      display: block;
-      height: fit-auto;
+      height: auto;
     }
   }

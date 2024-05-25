@@ -5,7 +5,9 @@
 @use "../global/forwords" as fw;
 
 .l-header{
-    background-color: fw.$color--middleBeige;
-    display: block;
-    height: fit-content;
+  background-color: fw.$color--middleBeige;
+    @include fw.mq("pc"){
+      display: block;
+      height: auto;
+    }
 }
