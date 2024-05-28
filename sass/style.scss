@@ -13,18 +13,22 @@
 @use "layout/footer";
 
 //object__component
+@use "object/component/body";
 @use "object/component/grid";
 @use "object/component/title";
-@use "object/component/searchBox";
+@use "object/component/seachBox";
 @use "object/component/button";
-@use "object/component/nav__ttl";
-
+@use "object/component/gnav";
 
 //object__project
+@use "object/project/header__btn";
+@use "object/project/header__seach";
+@use "object/project/header__ttl";
 @use "object/project/header" as ph;
-@use "object/project/header__search";
-@use "object/project/navButton";
 @use "object/project/sidebar" as ps;
-@use "object/project/nav__list";
+@use "object/project/mainVisual";
+@use "object/project/topPageTitle";
+@use "object/project/nav";
+
 
 //object__utility

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*=======================
+  メインビジュアル
+  =======================*/
+@use "../../global/forwords" as fw;
+@use "sass:math";
+
+.p-mainVisual{
+    width: 100%;
+    padding-bottom: 76%;
+    background: url(../../../img/mainvisual-sp@2x.jpg) center / cover no-repeat;
+    position: relative;
+    @include fw.mq("tab"){
+        padding-bottom: 34.17%;
+        background: url(../../../img/mainvisual-pc@2x.jpg) center / cover no-repeat;
+        @include fw.mq("pc"){
+            padding-bottom: 34.13%;
+        }
+    }
+    h1{
+        position: absolute;
+        top: calc( 52.28% - math.div(3.6rem,2));
+        left: 6.67vw;
+        @include fw.mq("tab"){
+            top: calc( 50.88% - math.div(3.6rem,2));
+            left: 10.31vw;
+            @include fw.mq("pc"){
+                top: calc( 49.72% - math.div(4.0rem,2));
+                left: 4.48vw;
+            }        }
+    }
+}

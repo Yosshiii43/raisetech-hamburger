@@ -5,8 +5,7 @@
   @use "../global/forwords" as fw;
 
   .l-sidebar{
-      height: 100vh;
     @include fw.mq("pc"){
-      height: auto;
+      background-color: fw.$color--lightBeige;
     }
   }

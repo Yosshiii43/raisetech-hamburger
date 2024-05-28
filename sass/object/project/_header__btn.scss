@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*==========================
+  グローバルメニューの開閉ボタン
+  ==========================*/
+  @use "../../global/forwords" as fw;
+
+.p-header__btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1000;
+  @include fw.mq("pc"){
+    font-size: 0;
+    }
+  &.is-open{
+    &::before,
+    &::after{
+      content: "";
+      width: 42.25px;
+      height: 6px;
+      background: fw.$color--darkGray;
+      position: absolute;
+      display: block;
+      right: 0;
+      top:16px;
+    }
+    &::before{
+      transform: rotate( 45deg );
+
+    }
+    &::after{
+      transform: rotate( 135deg );
+    }     
+    > span{
+      display: none;
+    }
+  }
+}

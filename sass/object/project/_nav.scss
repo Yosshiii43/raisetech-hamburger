@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*=======================
+  グローバルメニュー
+  =======================*/
+@use "../../global/forwords" as fw;
+
+.p-nav{
+    > ul{
+        color: fw.$color--darkGray;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;/*上下方向にはみ出した要素ををスクロールさせる*/
+        -ms-overflow-style: none;/*スクロールバー非表示（IE・Edge）*/
+        scrollbar-width: none;/*スクロールバー非表示（Firefox）*/
+        > li{
+            > a{
+                font-size: 2.4rem;
+                font-weight: 700;
+                padding-left: 46px;
+                margin-bottom: 40px;
+                @include fw.mq("tab"){
+                    margin-bottom: 32px;
+                }
+            }
+        > ul{
+            margin-bottom: 60px;
+            @include fw.mq("tab"){
+                margin-bottom: 48px;
+            }
+            >li{
+                > a{
+                    font-size: 2.0rem;
+                    font-weight: 400;
+                    padding-left: 66px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        }
+    }
+}
+.p-nav::-webkit-scrollbar{//スクロールバーの非表示
+    display:none;
+  }

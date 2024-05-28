@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*=======================
+  heddar検索
+  =======================*/
+@use "../../global/forwords" as fw;
+
+.p-header__search{
+  form{
+  width: 84.8vw;
+  display: flex;  
+  justify-content: space-between;
+  @include fw.mq("tab"){
+      width: 65.47vw;
+      @include fw.mq("pc"){
+        width: 28.44vw;
+      }
+  }
+  input{
+      width: 57.6vw;
+      padding: 10px 5px 10px 34px ;
+      @include fw.mq("tab"){
+          width: 47.48vw;
+          @include fw.mq("pc"){
+            width: 20.625vw;
+          }
+      }
+  }
+  button{
+    display: block;
+    text-align: center;
+    width: 24vw;
+    color: fw.$color--darkGray;
+      @include fw.mq("tab"){
+        width: 16.31vw;
+          @include fw.mq("pc"){
+            width: 7.08vw;
+          }
+      }
+  }
+  }
+}

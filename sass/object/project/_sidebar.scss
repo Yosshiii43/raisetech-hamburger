@@ -1,46 +1,56 @@
 @charset "UTF-8";
-/*============================
+/*=======================
   サイドバー
-  ============================*/
-
+  =======================*/
 @use "../../global/forwords" as fw;
-@use "sass:math";
-body{
-    overflow-x: hidden;
-}
+
 .p-sidebar{
-  .p-navbg, .p-nav{
-  transition: 300ms 0s ease-out;
-  height: auto;
-  position: fixed;
-  overflow: hidden;
-  left: 100%;
-  }
-  .p-navbg{
-    width: 100vw;
-    background-color: rgba(0,0,0,0.502); 
-    z-index: 100;
-  }
-  .p-nav{
-    width: 87.47vw;
-    padding: 178px  0 0 46px;
-    background-color: fw.$color--lightBeige;
-    z-index: 200;
-    @include fw.mq("tab"){
-      width: 44.0vw;
-      @include fw.mq("pc"){
-        position: static;
-        height: auto;
-      }
+    position: relative;
+    .p-navbg, .p-nav{
+        transition: all 300ms 0s ease-out;
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+        left: 100%;
+        }
+        .p-navbg{
+          width: 100vw;
+          background-color: rgba(0,0,0,0.502); 
+          z-index: 100;
+        }
+        .p-nav{
+          width: 87.47vw;
+          padding-top: 178px;
+          background-color: fw.$color--lightBeige;
+          z-index: 200;
+          @include fw.mq("tab"){
+            width: 44.0vw;
+            @include fw.mq("pc"){
+                width         : inherit;
+                height        : inherit;
+                padding       : inherit;
+                position      : static;
+                background    : inherit;
+                transition: inherit;
+            }
+          }
+        }
+        &.is-open > .p-navbg{
+            left: 0;
+          }
+        &.is-open > .p-nav{
+            left: 12.53vw;
+            @include fw.mq("tab"){
+              left: 56vw;
+            }
+          }
+        h2{
+            font-size: 0;
+            line-height: 1;
+            @include fw.mq("pc"){
+            font-size: 3.4rem;
+            color: fw.$color--darkGray;
+            margin: 84px 0 90px 46px;
+        }
     }
-  }
-  &.is-open .p-navbg{
-    left: 0;
-  }
-  &.is-open .p-nav{
-    left: 12.53vw;
-    @include fw.mq("tab"){
-      left: 56vw;
-    }
-  }
 }

@@ -8,6 +8,5 @@
   background-color: fw.$color--middleBeige;
     @include fw.mq("pc"){
       display: block;
-      height: auto;
     }
 }

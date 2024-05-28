@@ -5,15 +5,19 @@
 @use "../../global/forwords" as fw;
 
 body > .wrapper{
-  height: auto;
   display: grid;
   gap: 0;
   box-sizing: border-box;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 57.33vw 1fr 40vw;
   grid-template-columns: 1fr;
-  @include fw.mq("pc"){
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 19.12%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  @include fw.mq("tab"){
+    grid-template-rows: 26.02vw 1fr 17.87vw;
+    @include fw.mq("pc"){
+      grid-template-rows: 11.30vw 1fr 7.81vw;
+      grid-template-columns: 1fr 19.12%;
+    }
   }
 }
 body > .wrapper .l-header{

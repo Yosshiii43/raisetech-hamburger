@@ -195,7 +195,6 @@ a {
 @media screen and (min-width: 1024px) {
   .l-header {
     display: block;
-    height: auto;
   }
 }
 
@@ -215,12 +214,9 @@ a {
 /*=======================
   サイドバー
   =======================*/
-.l-sidebar {
-  height: 100vh;
-}
 @media screen and (min-width: 1024px) {
   .l-sidebar {
-    height: auto;
+    background-color: #F2EDE9;
   }
 }
 
@@ -232,19 +228,32 @@ a {
 }
 
 /*=======================
+  body
+  =======================*/
+.c-body {
+  overflow-x: hidden;
+}
+
+/*=======================
   グリッド
   =======================*/
 body > .wrapper {
-  height: auto;
   display: grid;
   gap: 0;
   box-sizing: border-box;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 57.33vw 1fr 40vw;
   grid-template-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body > .wrapper {
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 26.02vw 1fr 17.87vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  body > .wrapper {
+    grid-template-rows: 11.3vw 1fr 7.81vw;
     grid-template-columns: 1fr 19.12%;
   }
 }
@@ -287,44 +296,34 @@ body > .wrapper .l-sidebar {
   }
 }
 
-/*=================
-  ヘッダータイトル
-  =================*/
+/*=======================
+  タイトル
+  =======================*/
 .c-title {
-  font-family: "Roboto", sans-serif;
+  font-family: Robot, sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 4rem;
-  line-height: 1.2;
-  color: #707070;
-  display: inline-block;
-}
-@media screen and (min-width: 1024px) {
-  .c-title {
-    font-size: 6.4rem;
-  }
 }
 
-/*=================
-  サーチボックス
-  =================*/
+/*=======================
+  検索ボックス
+  =======================*/
 .c-searchBox {
   position: relative;
 }
-.c-searchBox .searchBox__input {
+.c-searchBox input {
   border: 1px solid #707070;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
-.c-searchBox .searchBox__icon {
+.c-searchBox p {
   position: absolute;
   top: 11px;
   left: 5px;
 }
 
-/*=================
+/*=======================
   ボタン
-  =================*/
+  =======================*/
 .c-button {
   border: 1px solid #707070;
   border-radius: 10px;
@@ -332,127 +331,29 @@ body > .wrapper .l-sidebar {
   font-weight: 900;
 }
 
-/*==========================
-  ナビ.ゲーションメニュータイトル
-  ==========================*/
-.c-nav__ttl {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .c-nav__ttl {
-    display: block;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3.4rem;
-  }
-}
-
 /*=======================
-  p-header
+  メニューリスト
   =======================*/
-.p-header {
-  padding-bottom: 39px;
+.c-gnav li a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1024px) {
-  .p-header {
-    padding: 66px 31px 67px 65px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+
+/*==========================
+  グローバルメニューの開閉ボタン
+  ==========================*/
 .p-header__btn {
-  width: 52px;
-  height: 38px;
   position: absolute;
-  top: 7px;
-  right: 6px;
+  top: 8px;
+  right: 8px;
   z-index: 1000;
 }
-@media screen and (min-width: 768px) {
-  .p-header__btn {
-    width: 92px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .p-header__btn {
-    display: none;
+    font-size: 0;
   }
 }
-.p-header__ttl {
-  text-align: center;
-  margin-top: 43px;
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 1024px) {
-  .p-header__ttl {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 3.61px 0.5px;
-  }
-}
-.p-header__search {
-  display: flex;
-  justify-content: center;
-}
-
-/*============================
-  ヘッダー内検索ボックスとボタン
-  ============================*/
-.p-header__search form {
-  width: 318px;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .p-header__search form {
-    width: 546px;
-  }
-}
-.p-header__search form .searchBox__input {
-  width: 216px;
-  padding: 10px 5px 10px 34px;
-}
-@media screen and (min-width: 768px) {
-  .p-header__search form .searchBox__input {
-    width: 396px;
-  }
-}
-.p-header__search form button {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-@media screen and (min-width: 768px) {
-  .p-header__search form button {
-    padding-left: 51px;
-    padding-right: 51px;
-  }
-}
-
-/*=================
-  ナビゲーションボタン
-  =================*/
-.p-navButton > span {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 1.15;
-  color: #707070;
-}
-@media screen and (min-width: 768px) {
-  .p-navButton > span {
-    font-size: 3.4rem;
-    line-height: 1.176;
-  }
-}
-.p-navButton.is-open::before, .p-navButton.is-open::after {
+.p-header__btn.is-open::before, .p-header__btn.is-open::after {
   content: "";
   width: 42.25px;
   height: 6px;
@@ -462,28 +363,136 @@ body > .wrapper .l-sidebar {
   right: 0;
   top: 16px;
 }
-.p-navButton.is-open::before {
+.p-header__btn.is-open::before {
   transform: rotate(45deg);
 }
-.p-navButton.is-open::after {
+.p-header__btn.is-open::after {
   transform: rotate(135deg);
 }
-.p-navButton.is-open > span {
+.p-header__btn.is-open > span {
   display: none;
 }
 
-/*============================
-  サイドバー
-  ============================*/
-body {
-  overflow-x: hidden;
+/*=======================
+  heddar検索
+  =======================*/
+.p-header__search form {
+  width: 84.8vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .p-header__search form {
+    width: 65.47vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-header__search form {
+    width: 28.44vw;
+  }
+}
+.p-header__search form input {
+  width: 57.6vw;
+  padding: 10px 5px 10px 34px;
+}
+@media screen and (min-width: 768px) {
+  .p-header__search form input {
+    width: 47.48vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-header__search form input {
+    width: 20.625vw;
+  }
+}
+.p-header__search form button {
+  display: block;
+  text-align: center;
+  width: 24vw;
+  color: #707070;
+}
+@media screen and (min-width: 768px) {
+  .p-header__search form button {
+    width: 16.31vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-header__search form button {
+    width: 7.08vw;
+  }
 }
 
+/*=======================
+  ヘッダータイトル
+  =======================*/
+.p-header__ttl {
+  font-size: 4rem;
+  line-height: 1.175;
+  text-align: center;
+  color: #707070;
+}
+@media screen and (min-width: 768px) {
+  .p-header__ttl {
+    line-height: 1.325;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-header__ttl {
+    font-size: 6.4rem;
+    line-height: 1.3125;
+  }
+}
+
+/*=======================
+  ヘッダー
+  =======================*/
+.p-header {
+  padding-top: 43px;
+  padding-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-header {
+    padding: 3.438vw 1.615vw 3.49vw 3.385vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.p-header__search {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .p-header__search {
+    margin-top: 38px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-header__search {
+    margin-top: 0;
+  }
+}
+
+/*=======================
+  サイドバー
+  =======================*/
+.p-sidebar {
+  position: relative;
+}
 .p-sidebar .p-navbg, .p-sidebar .p-nav {
-  transition: 300ms 0s ease-out;
-  height: auto;
+  transition: all 300ms 0s ease-out;
+  height: 100vh;
   position: fixed;
-  overflow: hidden;
+  overflow-y: auto;
   left: 100%;
 }
 .p-sidebar .p-navbg {
@@ -493,7 +502,7 @@ body {
 }
 .p-sidebar .p-nav {
   width: 87.47vw;
-  padding: 178px 0 0 46px;
+  padding-top: 178px;
   background-color: #F2EDE9;
   z-index: 200;
 }
@@ -504,51 +513,124 @@ body {
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-sidebar .p-nav {
+    width: inherit;
+    height: inherit;
+    padding: inherit;
     position: static;
-    height: auto;
+    background: inherit;
+    transition: inherit;
   }
 }
-.p-sidebar.is-open .p-navbg {
+.p-sidebar.is-open > .p-navbg {
   left: 0;
 }
-.p-sidebar.is-open .p-nav {
+.p-sidebar.is-open > .p-nav {
   left: 12.53vw;
 }
 @media screen and (min-width: 768px) {
-  .p-sidebar.is-open .p-nav {
+  .p-sidebar.is-open > .p-nav {
     left: 56vw;
   }
 }
+.p-sidebar h2 {
+  font-size: 0;
+  line-height: 1;
+}
+@media screen and (min-width: 1024px) {
+  .p-sidebar h2 {
+    font-size: 3.4rem;
+    color: #707070;
+    margin: 84px 0 90px 46px;
+  }
+}
 
-/*==========================
-  ナビ.ゲーションメニュー
-  ==========================*/
-.p-nav__list .p-nav__item {
+/*=======================
+  メインビジュアル
+  =======================*/
+.p-mainVisual {
+  width: 100%;
+  padding-bottom: 76%;
+  background: url(../../../img/mainvisual-sp@2x.jpg) center/cover no-repeat;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-mainVisual {
+    padding-bottom: 34.17%;
+    background: url(../../../img/mainvisual-pc@2x.jpg) center/cover no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-mainVisual {
+    padding-bottom: 34.13%;
+  }
+}
+.p-mainVisual h1 {
+  position: absolute;
+  top: calc(52.28% - 1.8rem);
+  left: 6.67vw;
+}
+@media screen and (min-width: 768px) {
+  .p-mainVisual h1 {
+    top: calc(50.88% - 1.8rem);
+    left: 10.31vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-mainVisual h1 {
+    top: calc(49.72% - 2rem);
+    left: 4.48vw;
+  }
+}
+
+/*=======================
+  タイトル
+  =======================*/
+.p-topPageTitle {
+  color: #FFFFFF;
+  font-size: 3.6rem;
+}
+.p-topPageTitle span {
+  font-size: 1.6rem;
+}
+
+/*=======================
+  グローバルメニュー
+  =======================*/
+.p-nav > ul {
+  color: #707070;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; /*上下方向にはみ出した要素ををスクロールさせる*/
+  -ms-overflow-style: none; /*スクロールバー非表示（IE・Edge）*/
+  scrollbar-width: none; /*スクロールバー非表示（Firefox）*/
+}
+.p-nav > ul > li > a {
   font-size: 2.4rem;
   font-weight: 700;
-}
-.p-nav__list .p-nav__item .subMenu__list {
-  margin-top: 40px;
+  padding-left: 46px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  .p-nav__list .p-nav__item .subMenu__list {
-    margin-top: 32px;
+  .p-nav > ul > li > a {
+    margin-bottom: 32px;
   }
 }
-.p-nav__list .p-nav__item .subMenu__list .subMenu__item {
-  margin-left: 20px;
+.p-nav > ul > li > ul {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .p-nav > ul > li > ul {
+    margin-bottom: 48px;
+  }
+}
+.p-nav > ul > li > ul > li > a {
   font-size: 2rem;
   font-weight: 400;
+  padding-left: 66px;
+  margin-bottom: 20px;
 }
-.p-nav__list .p-nav__item .subMenu__list .subMenu__item ~ .subMenu__item {
-  margin-top: 20px;
-}
-.p-nav__list .p-nav__item ~ .p-nav__item {
-  margin-top: 60px;
-}
-@media screen and (min-width: 768px) {
-  .p-nav__list .p-nav__item ~ .p-nav__item {
-    margin-top: 48px;
-  }
+
+.p-nav::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

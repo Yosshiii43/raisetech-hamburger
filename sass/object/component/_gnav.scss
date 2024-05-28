@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*=======================
+  メニューリスト
+  =======================*/
+@use "../../global/forwords" as fw;
+
+.c-gnav{
+  li{
+    a{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
