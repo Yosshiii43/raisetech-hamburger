@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*=======================
+  フロントページ商品紹介
+  =======================*/
+@use "../../global/forwords" as fw;
+
+.p-salesFormat{
+    width: 100%;
+    height: fw.sp-vw( 642 );
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: fw.sp-vw( 13 ) fw.sp-vw( 16 ) fw.sp-vw( 16 );
+    @include fw.mq("tab"){
+        width: fw.tab-vw( 357 );
+        height: fw.tab-vw( 681 );
+        padding: fw.tab-vw( 14 ) fw.tab-vw( 16 ) fw.tab-vw( 16 );
+        @include fw.mq("pc"){
+            width: fw.pc-vw( 616 );
+            height: fw.pc-vw( 1197 );
+            padding: fw.pc-vw( 24 ) fw.pc-vw( 16 ) fw.pc-vw( 16 );
+        }
+    }
+    h2{
+        font-size: 4.1rem;
+        color: fw.$color--white;
+        @include fw.mq("tab"){
+            font-size: 4.4rem;
+            @include fw.mq("pc"){
+                font-size: 8.0rem;
+            }
+        }
+    }
+}
+.p-salesFormat:first-child{
+    background: url(../../../img/bg_takeOut.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.p-salesFormat:last-child{
+    background: url(../../../img/bg_eatIn.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+

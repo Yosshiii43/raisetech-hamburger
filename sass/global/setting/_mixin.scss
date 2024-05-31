@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@use "sass:math";
 
 $breakpoints: (
     "sp": "screen and (max-width: 767px)",
@@ -11,4 +12,25 @@ $breakpoints: (
     @media #{map-get($breakpoints, $breakpoint)} {
         @content;
     }
+}
+
+//画面幅に合わせてpxをvwに変換する
+
+$pcDesignSize: 1920;
+$tabDesignSize: 834;
+$spDesignSize: 375;
+
+//PCデザイン用
+@function pc-vw($pixelsVw) {
+    @return math.div($pixelsVw , $pcDesignSize) * 100vw;
+}
+
+//tabletデザイン用
+@function tab-vw($pixelsVw) {
+    @return math.div($pixelsVw , $tabDesignSize) * 100vw;
+}
+
+//SPデザイン用
+@function sp-vw($pixelsVw) {
+    @return math.div($pixelsVw , $spDesignSize) * 100vw;
 }

@@ -5,29 +5,18 @@
 @use "../../global/forwords" as fw;
 
 .p-header{
-  padding-top: 43px;
-  padding-bottom: 39px;
+  padding-top: fw.sp-vw( 43 );
+  padding-bottom: fw.sp-vw( 39 );
   display: flex;
   flex-direction: column;
   @include fw.mq("tab"){
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: fw.tab-vw( 40 );
+    padding-bottom: fw.tab-vw( 40 );
     @include fw.mq("pc"){
-        padding: 3.438vw 1.615vw 3.490vw 3.385vw;
+        padding: fw.pc-vw( 66 ) fw.pc-vw( 31 ) fw.pc-vw( 67 ) fw.pc-vw( 65 );
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
   }
-    &__search{
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-      @include fw.mq("tab"){
-        margin-top: 38px;
-        @include fw.mq("pc"){
-          margin-top: 0;
-        }
-      }
-    }
 }

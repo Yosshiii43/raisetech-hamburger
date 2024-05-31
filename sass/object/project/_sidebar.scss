@@ -19,12 +19,12 @@
           z-index: 100;
         }
         .p-nav{
-          width: 87.47vw;
-          padding-top: 178px;
+          width: fw.sp-vw( 328 );
+          padding-top: fw.sp-vw( 178 );
           background-color: fw.$color--lightBeige;
           z-index: 200;
           @include fw.mq("tab"){
-            width: 44.0vw;
+            width: fw.tab-vw( 367 );
             @include fw.mq("pc"){
                 width         : inherit;
                 height        : inherit;
@@ -39,9 +39,9 @@
             left: 0;
           }
         &.is-open > .p-nav{
-            left: 12.53vw;
+            left: fw.sp-vw( 375 - 328 );
             @include fw.mq("tab"){
-              left: 56vw;
+              left: fw.tab-vw( 823 - 367 );
             }
           }
         h2{
@@ -50,7 +50,10 @@
             @include fw.mq("pc"){
             font-size: 3.4rem;
             color: fw.$color--darkGray;
-            margin: 84px 0 90px 46px;
+            margin-top: fw.pc-vw( 84 ) ;
+            margin-bottom: fw.pc-vw( 90 ) ;
+            margin-left: fw.pc-vw( 46 ) ;
+            
         }
     }
 }

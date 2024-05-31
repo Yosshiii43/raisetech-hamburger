@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*=======================
+  行間隔広め
+  =======================*/
+  @use "../../global/forwords" as fw;
+
+  .c-lhWide{
+    line-height: 2.0235;
+    @include fw.mq("pc"){
+        line-height: 2.06;
+    }
+  }

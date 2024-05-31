@@ -5,7 +5,6 @@
 @use "../global/forwords" as fw;
 
 .l-main{
-    background-color: fw.$color--paleBeige;
     width: 100%;
     @include fw.mq("pc"){
         display: block;

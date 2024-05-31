@@ -16,9 +16,14 @@
 @use "object/component/body";
 @use "object/component/grid";
 @use "object/component/title";
+@use "object/component/text";
 @use "object/component/seachBox";
 @use "object/component/button";
 @use "object/component/gnav";
+@use "object/component/horizon";
+@use "object/component/liWide";
+@use "object/component/text-small";
+
 
 //object__project
 @use "object/project/header__btn";
@@ -29,6 +34,13 @@
 @use "object/project/mainVisual";
 @use "object/project/topPageTitle";
 @use "object/project/nav";
+@use "object/project/body" as pb;
+@use "object/project/salesFormat__wrap";
+@use "object/project/salesFormat";
+@use "object/project/salesItem";
+@use "object/project/access";
+
 
 
 //object__utility
+@use "object/utility/frontpageBody";

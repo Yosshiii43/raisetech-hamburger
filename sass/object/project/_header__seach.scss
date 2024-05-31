@@ -5,35 +5,44 @@
 @use "../../global/forwords" as fw;
 
 .p-header__search{
+    margin: fw.sp-vw( 40 ) auto 0;
+    @include fw.mq("tab"){
+      margin-top: fw.tab-vw( 38 );
+      @include fw.mq("pc"){
+        margin: 0;
+      }
+    }
   form{
-  width: 84.8vw;
+  width: fw.sp-vw( 318 );
   display: flex;  
   justify-content: space-between;
   @include fw.mq("tab"){
-      width: 65.47vw;
+      width: fw.tab-vw( 546 );
       @include fw.mq("pc"){
-        width: 28.44vw;
+        width: fw.pc-vw( 546 );
       }
   }
   input{
-      width: 57.6vw;
-      padding: 10px 5px 10px 34px ;
+      width: fw.sp-vw( 216 );
+      padding: fw.sp-vw( 10 ) fw.sp-vw( 5 )fw.sp-vw( 10 ) fw.sp-vw( 34 ) ;
       @include fw.mq("tab"){
-          width: 47.48vw;
+          width: fw.tab-vw( 396 );
+          padding: fw.tab-vw( 11 ) fw.tab-vw( 12 ) fw.tab-vw( 11 ) fw.tab-vw( 36 );
           @include fw.mq("pc"){
-            width: 20.625vw;
+            width: fw.pc-vw( 396 );
+            padding: fw.pc-vw( 11 ) fw.pc-vw( 12 ) fw.pc-vw( 11 ) fw.pc-vw( 36 );
           }
       }
   }
   button{
     display: block;
     text-align: center;
-    width: 24vw;
+    width: fw.sp-vw( 90 );
     color: fw.$color--darkGray;
       @include fw.mq("tab"){
-        width: 16.31vw;
+        width: fw.tab-vw( 136 );
           @include fw.mq("pc"){
-            width: 7.08vw;
+            width: fw.pc-vw( 136 );
           }
       }
   }
