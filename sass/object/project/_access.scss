@@ -3,25 +3,49 @@
   トップページ地図
   =======================*/
 @use "../../global/forwords" as fw;
+
 .p-access{
     width: 100%;
-    height: fw.sp-vw( 691 );
-    position: relative;
-    @include fw.mq("tab"){
-    height: fw.tab-vw( 415 );
-    @include fw.mq("pc"){
-        height: fw.pc-vw( 649 );
-    }
-    }
+    height: auto;
     &__caption{
+        position: relative;
+        z-index: 1;
         width: 100%;
-        padding: fw.sp-vw( 42 ) fw.sp-vw( 40 ) 0;
         color: fw.$color--white;
+        width: 100%;
+        height: auto;
+        background: url(../../../img/map.png);
+        background-size: 400%;
+        background-position: 30% center;
         @include fw.mq("tab"){
-            padding: fw.tab-vw( 42 ) fw.tab-vw( 29 ) 0 fw.tab-vw( 42 );
-            @include fw.mq("pc"){
-                width: fw.pc-vw( 950 );
-                padding: fw.pc-vw( 86 ) fw.pc-vw( 134 ) 0 fw.pc-vw( 119);
+            background-size: 145%;
+            background-position: 27% 52%;
+        }        
+        > div{
+            padding: fw.sp-vw( 42 ) fw.sp-vw( 40 ) fw.sp-vw( 57);
+            background: rgba(0,0,0,0.4029);
+            @include fw.mq("tab"){
+                padding: fw.tab-vw( 42 ) fw.tab-vw( 29 ) fw.tab-vw( 40 ) fw.tab-vw( 42 );
+                @include fw.mq("pc"){
+                    padding: fw.pc-vw( 86 ) fw.pc-vw( 737 ) fw.pc-vw( 75 ) fw.pc-vw( 119 );                    
+                }
+            }    
+        }
+        > div::after{
+            content: "";
+            background: rgba(0,0,0,0.2855);
+            display: block;
+            width: 100%;
+            height: fw.sp-vw( 415 );
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            @include fw.mq("tab"){
+                height: 100%;
+                @include fw.mq("pc"){
+                    width: fw.pc-vw( 950 );
+                }
             }
         }
         &__ttl{
@@ -46,51 +70,5 @@
                 margin-top: 59px;
             }
         }
-    }
-    &__cover{
-        width: 100%;
-        height: fw.sp-vw( 415 );
-        background: rgba($color: #000000, $alpha: 0.2855);
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        @include fw.mq("tab"){
-            height: fw.tab-vw( 415 );
-            @include fw.mq("pc"){
-                width: fw.pc-vw( 950 );
-                height: fw.pc-vw( 649 );
-            }
-            }
-    }
-    &__map{
-        width: 100%;
-        height: fw.sp-vw( 691 );
-        background: url(../../../img/map.png);
-        background-size: cover;
-        background-position: center center;
-        opacity: 0.5971;
-        position: absolute;
-        top: 0;
-        z-index: -2;
-        @include fw.mq("tab"){
-            height: fw.tab-vw( 415 );
-            @include fw.mq("pc"){
-                height: fw.pc-vw( 649 );
-            }
-            }
-    }
-    &__base{
-        width: 100%;
-        height: fw.sp-vw( 691 );
-        background: fw.$color--black;
-        position: absolute;
-        top: 0;
-        z-index: -3;
-        @include fw.mq("tab"){
-            height: fw.tab-vw( 415 );
-            @include fw.mq("pc"){
-                height: fw.pc-vw( 649 );
-            }
-            }
     }
 }

@@ -23,11 +23,14 @@
     }
     h2{
         font-size: 4.1rem;
+        line-height: 1.1708;
         color: fw.$color--white;
         @include fw.mq("tab"){
             font-size: 4.4rem;
+            line-height: 1.1819;
             @include fw.mq("pc"){
                 font-size: 8.0rem;
+                line-height: 1.1875;
             }
         }
     }

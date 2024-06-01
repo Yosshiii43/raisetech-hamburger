@@ -10,7 +10,7 @@
 @use "layout/header" as lh;
 @use "layout/main";
 @use "layout/sidebar" as ls;
-@use "layout/footer";
+@use "layout/footer" as lf;
 
 //object__component
 @use "object/component/body";
@@ -21,7 +21,7 @@
 @use "object/component/button";
 @use "object/component/gnav";
 @use "object/component/horizon";
-@use "object/component/liWide";
+@use "object/component/lhWide";
 @use "object/component/text-small";
 
 
@@ -39,6 +39,7 @@
 @use "object/project/salesFormat";
 @use "object/project/salesItem";
 @use "object/project/access";
+@use "object/project/footer" as pf;
 
 
 
