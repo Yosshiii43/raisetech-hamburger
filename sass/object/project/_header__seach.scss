@@ -37,12 +37,12 @@
   button{
     display: block;
     text-align: center;
-    width: fw.sp-vw( 90 );
+    width: fw.sp-vw( 88 );
     color: fw.$color--darkGray;
       @include fw.mq("tab"){
-        width: fw.tab-vw( 136 );
+        width: fw.tab-vw( 134 );
           @include fw.mq("pc"){
-            width: fw.pc-vw( 136 );
+            width: fw.pc-vw( 134 );
           }
       }
   }

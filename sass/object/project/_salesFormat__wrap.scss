@@ -6,12 +6,10 @@
 
 .p-salesFormat__wrap{
   width: 100%;
-  height: fw.sp-vw( 642 * 2 + 20 );
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
   @include fw.mq("tab"){
-    height: auto;
     flex-wrap: nowrap;
     justify-content: space-between;
   }

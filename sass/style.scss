@@ -17,6 +17,8 @@
 @use "object/component/grid";
 @use "object/component/title";
 @use "object/component/text";
+@use "object/component/font01";
+@use "object/component/font02";
 @use "object/component/seachBox";
 @use "object/component/button";
 @use "object/component/gnav";
@@ -37,6 +39,7 @@
 @use "object/project/body" as pb;
 @use "object/project/salesFormat__wrap";
 @use "object/project/salesFormat";
+@use "object/project/salesFormat__ttl";
 @use "object/project/salesItem";
 @use "object/project/access";
 @use "object/project/footer" as pf;

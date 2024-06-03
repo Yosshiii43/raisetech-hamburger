@@ -9,13 +9,14 @@
     background-color: rgba(255,255,255,0.8); 
     @include fw.mq("tab"){
       padding: fw.tab-vw( 16 );
-      @include fw.mq("tab"){
+      @include fw.mq("pc"){
         padding: fw.pc-vw( 16 );
       }
     }
     dt{
       font-size: 2.2rem;
       margin-bottom: fw.sp-vw( 8 );
+      line-height: 1.09;
       @include fw.mq("tab"){
         font-size: 2.4rem;
         line-height: 1;

@@ -299,7 +299,7 @@ body > .wrapper .l-sidebar {
   タイトル
   =======================*/
 .c-title {
-  font-family: Robot, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -309,6 +309,20 @@ body > .wrapper .l-sidebar {
   =======================*/
 .c-text {
   line-height: 1.485;
+}
+
+/*=======================
+  フォントファミリー Roboto
+  =======================*/
+.c-font01 {
+  font-family: roboto, sans-serif;
+}
+
+/*=======================
+  フォントファミリー m+ 1p
+  =======================*/
+.c-font02 {
+  font-family: "M PLUS 1p", sans-serif;
 }
 
 /*=======================
@@ -335,7 +349,7 @@ body > .wrapper .l-sidebar {
   border: 1px solid #707070;
   border-radius: 10px;
   background: linear-gradient(to right, #DED8D3, #F2EDE9);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 /*=======================
@@ -484,17 +498,17 @@ body > .wrapper .l-sidebar {
 .p-header__search form button {
   display: block;
   text-align: center;
-  width: 24vw;
+  width: 23.4666666667vw;
   color: #707070;
 }
 @media screen and (min-width: 768px) {
   .p-header__search form button {
-    width: 16.3069544365vw;
+    width: 16.067146283vw;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-header__search form button {
-    width: 7.0833333333vw;
+    width: 6.9791666667vw;
   }
 }
 
@@ -503,7 +517,7 @@ body > .wrapper .l-sidebar {
   =======================*/
 .p-header__ttl {
   font-size: 4rem;
-  line-height: 1.172;
+  line-height: 1.1725;
   text-align: center;
   color: #707070;
 }
@@ -738,14 +752,12 @@ body > .wrapper .l-sidebar {
   =======================*/
 .p-salesFormat__wrap {
   width: 100%;
-  height: 347.7333333333vw;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .p-salesFormat__wrap {
-    height: auto;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -756,41 +768,35 @@ body > .wrapper .l-sidebar {
   =======================*/
 .p-salesFormat {
   width: 100%;
-  height: 171.2vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding: 3.4666666667vw 4.2666666667vw 4.2666666667vw;
+  min-height: 171.2vw;
 }
 @media screen and (min-width: 768px) {
   .p-salesFormat {
     width: 42.8057553957vw;
-    height: 81.654676259vw;
-    padding: 1.6786570743vw 1.9184652278vw 1.9184652278vw;
+    min-height: 81.654676259vw;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-salesFormat {
     width: 32.0833333333vw;
-    height: 62.34375vw;
-    padding: 1.25vw 0.8333333333vw 0.8333333333vw;
+    min-height: 62.34375vw;
   }
 }
-.p-salesFormat h2 {
-  font-size: 4.1rem;
-  line-height: 1.1708;
-  color: #FFFFFF;
+.p-salesFormat a {
+  padding: 3.4666666667vw 4.2666666667vw 4.2666666667vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 @media screen and (min-width: 768px) {
-  .p-salesFormat h2 {
-    font-size: 4.4rem;
-    line-height: 1.1819;
+  .p-salesFormat a {
+    padding: 1.6786570743vw 1.9184652278vw 1.9184652278vw;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
-  .p-salesFormat h2 {
-    font-size: 8rem;
-    line-height: 1.1875;
+  .p-salesFormat a {
+    padding: 1.25vw 0.8333333333vw 0.8333333333vw;
   }
 }
 
@@ -806,6 +812,46 @@ body > .wrapper .l-sidebar {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-top: 5.3333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-salesFormat:last-child {
+    margin-top: 0;
+  }
+}
+
+/*============================
+  フロントページ商品紹介タイトル
+  ============================*/
+.p-salesFormat__ttl {
+  padding-bottom: 29px;
+}
+@media screen and (min-width: 768px) {
+  .p-salesFormat__ttl {
+    padding-bottom: 35px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-salesFormat__ttl {
+    padding-bottom: 63px;
+  }
+}
+.p-salesFormat__ttl h2 {
+  font-size: 4.1rem;
+  line-height: 1.1708;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .p-salesFormat__ttl h2 {
+    font-size: 4.4rem;
+    line-height: 1.1819;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-salesFormat__ttl h2 {
+    font-size: 8rem;
+    line-height: 1.1875;
+  }
 }
 
 /*=======================
@@ -820,7 +866,7 @@ body > .wrapper .l-sidebar {
     padding: 1.9184652278vw;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-salesItem {
     padding: 0.8333333333vw;
   }
@@ -828,6 +874,7 @@ body > .wrapper .l-sidebar {
 .p-salesItem dt {
   font-size: 2.2rem;
   margin-bottom: 2.1333333333vw;
+  line-height: 1.09;
 }
 @media screen and (min-width: 768px) {
   .p-salesItem dt {
@@ -877,7 +924,7 @@ body > .wrapper .l-sidebar {
 @media screen and (min-width: 768px) {
   .p-access__caption {
     background-size: 145%;
-    background-position: 27% 52%;
+    background-position: 27% 53%;
   }
 }
 .p-access__caption > div {
@@ -966,12 +1013,12 @@ body > .wrapper .l-sidebar {
 }
 .p-footer__ul, .p-footer__copyright {
   flex-basis: 100%;
+  line-height: 1.5;
 }
 .p-footer__ul {
   display: flex;
   justify-content: center;
   font-size: 1.8rem;
-  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .p-footer__ul {

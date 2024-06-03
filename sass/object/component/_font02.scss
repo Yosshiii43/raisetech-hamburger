@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /*=======================
-  タイトル
+  フォントファミリー m+ 1p
   =======================*/
 @use "../../global/forwords" as fw;
-.c-title{
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    line-height: 1.5;
+
+.c-font02{
+    font-family: "M PLUS 1p",sans-serif;
 }

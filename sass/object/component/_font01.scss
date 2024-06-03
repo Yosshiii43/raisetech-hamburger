@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /*=======================
-  タイトル
+  フォントファミリー Roboto
   =======================*/
 @use "../../global/forwords" as fw;
-.c-title{
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    line-height: 1.5;
+
+.c-font01{
+    font-family: roboto,sans-serif;;
 }
