@@ -2,7 +2,7 @@
 /*=======================
   トップページ地図
   =======================*/
-@use "../../global/forwords" as fw;
+  @use "../../foundation/forwords" as fw;
 
 .p-access{
     width: 100%;
@@ -36,7 +36,7 @@
             background: rgba(0,0,0,0.2855);
             display: block;
             width: 100%;
-            height: fw.sp-vw( 415 );
+            height: 50%;
             position: absolute;
             top: 0;
             left: 0;
@@ -44,7 +44,7 @@
             @include fw.mq("tab"){
                 height: 100%;
                 @include fw.mq("pc"){
-                    width: fw.pc-vw( 950 );
+                    width: 62%;
                 }
             }
         }

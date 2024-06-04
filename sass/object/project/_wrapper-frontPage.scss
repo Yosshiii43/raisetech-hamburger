@@ -2,8 +2,8 @@
 /*=======================
   フロントページp-bodyの変更
   =======================*/
-  @use "../../global/forwords" as fw;
-.u-frontpageBody{
+  @use "../../foundation/forwords" as fw;
+.p-wrapper-frontPage{
     padding: fw.sp-vw(20) fw.sp-vw(20) fw.sp-vw(49);
     @include fw.mq("tab"){
         padding: fw.tab-vw(40);

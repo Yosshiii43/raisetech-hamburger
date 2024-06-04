@@ -2,8 +2,8 @@
 /*=======================
   .p-body(single基準)
   =======================*/
-@use "../../global/forwords" as fw;
-.p-body{
+  @use "../../foundation/forwords" as fw;
+.p-wrapper{
   background: fw.$color--paleBeige;
   padding: fw.sp-vw(34) fw.sp-vw(20) fw.sp-vw(69);
   @include fw.mq("tab"){

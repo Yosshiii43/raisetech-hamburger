@@ -2,8 +2,8 @@
 /*=======================
   フォントファミリー m+ 1p
   =======================*/
-@use "../../global/forwords" as fw;
+  @use "../../foundation/forwords" as fw;
 
-.c-font02{
+.c-font-mplus{
     font-family: "M PLUS 1p",sans-serif;
 }

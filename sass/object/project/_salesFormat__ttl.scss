@@ -3,7 +3,7 @@
 /*============================
   フロントページ商品紹介タイトル
   ============================*/
-@use "../../global/forwords" as fw;
+  @use "../../foundation/forwords" as fw;
 .p-salesFormat__ttl{
     padding-bottom: 29px;
     @include fw.mq("tab"){

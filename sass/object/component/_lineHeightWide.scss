@@ -2,9 +2,9 @@
 /*=======================
   行間隔広め
   =======================*/
-  @use "../../global/forwords" as fw;
+  @use "../../foundation/forwords" as fw;
 
-  .c-lhWide{
+  .c-lineHeightWide{
     line-height: 2.313;
     @include fw.mq("pc"){
         line-height: 2.06;

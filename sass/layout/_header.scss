@@ -2,7 +2,7 @@
 /*=======================
   ヘッダー
   =======================*/
-@use "../global/forwords" as fw;
+  @use "../foundation/forwords" as fw;
 
 .l-header{
   background-color: fw.$color--middleBeige;

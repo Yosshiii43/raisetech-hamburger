@@ -2,7 +2,7 @@
 /*=======================
   フッター
   =======================*/
-@use "../global/forwords" as fw;
+@use "../foundation/forwords" as fw;
 
 .l-footer{
     background-color: fw.$color--darkBrown;

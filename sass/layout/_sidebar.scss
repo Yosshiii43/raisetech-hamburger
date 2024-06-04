@@ -2,7 +2,7 @@
 /*=======================
   サイドバー
   =======================*/
-  @use "../global/forwords" as fw;
+  @use "../foundation/forwords" as fw;
 
   .l-sidebar{
     @include fw.mq("pc"){

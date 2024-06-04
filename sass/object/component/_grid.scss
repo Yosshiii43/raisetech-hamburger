@@ -2,7 +2,7 @@
 /*=======================
   グリッド
   =======================*/
-@use "../../global/forwords" as fw;
+  @use "../../foundation/forwords" as fw;
 
 body > .wrapper{
   display: grid;

@@ -2,8 +2,8 @@
 /*=======================
   フォントファミリー Roboto
   =======================*/
-@use "../../global/forwords" as fw;
+  @use "../../foundation/forwords" as fw;
 
-.c-font01{
+.c-font-roboto{
     font-family: roboto,sans-serif;;
 }
