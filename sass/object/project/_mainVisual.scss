@@ -2,31 +2,36 @@
 /*=======================
   メインビジュアル
   =======================*/
-  @use "../../foundation/forwords" as fw;
+@use "../../foundation/forwords" as fw;
 @use "sass:math";
 
-.p-mainVisual{
+.p-mainVisual--front{ //フロントページ
     width: 100%;
-    padding-bottom: 76%;
-    background: url(../../../img/mainvisual-sp@2x.jpg) center / cover no-repeat;
+    //padding-bottom: 76%;//背景画像高さ÷背景画像幅
+    height: fw.rem( 285 );//縦横比では文字サイズや余白がおかしくなるのでremに変更
+    background: url(../../../img/mainvisual--frontSp.jpg) center / cover no-repeat;
     position: relative;
     @include fw.mq("tab"){
-        padding-bottom: 34.17%;
-        background: url(../../../img/mainvisual-pc@2x.jpg) center / cover no-repeat;
+        //padding-bottom: 34.17%;
+        background: url(../../../img/mainvisual--frontPc.jpg) center / cover no-repeat;
         @include fw.mq("pc"){
-            padding-bottom: 34.13%;
+            //padding-bottom: 34.13%;
+            height: fw.rem( 530 );
         }
     }
-    h1{
-        position: absolute;
-        top: calc( 52.28% - math.div(3.6rem,2));
-        left: fw.sp-vw( 25 );
-        @include fw.mq("tab"){
-            top: calc( 50.88% - math.div(3.6rem,2));
-            left: fw.tab-vw( 86 );
-            @include fw.mq("pc"){
-                top: calc( 49.72% - math.div(4.0rem,2));
-                left: fw.pc-vw( 86 );
-            }        }
+}
+
+.p-mainVisual--archive{ //アーカイブページ・アーカイブサーチページ
+    width: 100%;
+    height: fw.rem( 285);
+    background: url(../../../img/mainvisual--archiveSp.jpg) left 46%  / 225% no-repeat;
+    position: relative;
+    @include fw.mq("tab"){
+        background: url(../../../img/mainvisual--archivePc.jpg) center 45%/ 170% no-repeat;
+        @include fw.mq("pc"){
+            height: fw.rem( 239 );
+            background-position: center 47%;
+            background-size: cover;
+        }
     }
 }

@@ -34,16 +34,17 @@
 @use "object/project/header" as ph;
 @use "object/project/sidebar" as ps;
 @use "object/project/mainVisual";
-@use "object/project/topPageTitle";
+@use "object/project/pageTitle";
 @use "object/project/nav";
 @use "object/project/wrapper";
-@use "object/project/wrapper-frontPage";
 @use "object/project/salesFormat__wrap";
 @use "object/project/salesFormat";
 @use "object/project/salesFormat__ttl";
 @use "object/project/salesItem";
 @use "object/project/access";
 @use "object/project/footer" as pf;
+@use "object/project/archiveDescription";
+@use "object/project/archiveCard";
 
 
 
