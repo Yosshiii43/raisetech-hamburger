@@ -405,6 +405,27 @@ body > .wrapper .l-sidebar {
   }
 }
 
+/*=======================
+  スクエア
+  =======================*/
+.c-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #707070;
+}
+
+/*=======================
+  横並び中央揃え
+  =======================*/
+.c-sideBySide {
+  display: flex;
+  align-items: center;
+}
+
 /*==========================
   グローバルメニューの開閉ボタン
   ==========================*/
@@ -1255,6 +1276,83 @@ body > .wrapper .l-sidebar {
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-archiveCard ~ .p-archiveCard {
     margin-top: 1.5625vw;
+  }
+}
+
+/*=======================
+  ページネーション
+  =======================*/
+.p-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 16.5333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination {
+    justify-content: center;
+    margin-top: 12.7697841727vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-pagination {
+    margin-top: 7.8125vw;
+  }
+}
+.p-pagination__head {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__head {
+    display: block;
+    margin-right: 1.9rem;
+  }
+}
+.p-pagination__prevposts svg {
+  margin-right: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__prevposts svg {
+    margin-right: 1.7rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__prevposts span {
+    display: none;
+    margin-left: 0.8rem;
+  }
+}
+.p-pagination__nextposts svg {
+  margin-left: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__nextposts svg {
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__nextposts span {
+    display: none;
+    max-width: 0.8rem;
+  }
+}
+.p-pagination__item {
+  display: none;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__item {
+    display: block;
+  }
+}
+.p-pagination__item .c-activ {
+  color: #FFFFFF;
+  background: #3C2B1C;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination__item ~ .p-pagination__item {
+    margin-left: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

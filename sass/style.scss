@@ -25,6 +25,8 @@
 @use "object/component/horizon";
 @use "object/component/lineHeightWide";
 @use "object/component/text-small";
+@use "object/component/square";
+@use "object/component/sideBySide";
 
 
 //object__project
@@ -45,6 +47,7 @@
 @use "object/project/footer" as pf;
 @use "object/project/archiveDescription";
 @use "object/project/archiveCard";
+@use "object/project/pagination";
 
 
 
