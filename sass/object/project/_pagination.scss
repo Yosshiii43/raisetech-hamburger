@@ -55,6 +55,7 @@
     &__item{
         display: none;
         font-weight: 700;
+        background: fw.$color--white;
         @include fw.mq("tab"){
             display: block;
         }
