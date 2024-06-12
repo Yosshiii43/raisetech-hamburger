@@ -24,13 +24,12 @@
   }
   input{
       width: fw.sp-vw( 216 );
-      padding: fw.sp-vw( 10 ) fw.sp-vw( 5 )fw.sp-vw( 10 ) fw.sp-vw( 34 ) ;
+      padding: 1.1rem 0.5rem 1.1rem 2.9rem;
       @include fw.mq("tab"){
           width: fw.tab-vw( 396 );
-          padding: fw.tab-vw( 11 ) fw.tab-vw( 12 ) fw.tab-vw( 11 ) fw.tab-vw( 36 );
+          padding: 1.1rem 1.2rem 1.1rem 3.6rem;
           @include fw.mq("pc"){
             width: fw.pc-vw( 396 );
-            padding: fw.pc-vw( 11 ) fw.pc-vw( 12 ) fw.pc-vw( 11 ) fw.pc-vw( 36 );
           }
       }
   }

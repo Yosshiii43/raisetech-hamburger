@@ -13,7 +13,10 @@
     }
     p{
       position: absolute;
-      top: 11px;
-      left: 5px;
+      top: calc(50% - 12px);//アイコンのt高さ24pxのため
+      left:0.5rem;
+      @include fw.mq("tab"){
+        left: 1.2rem;
+      }
     }
   }

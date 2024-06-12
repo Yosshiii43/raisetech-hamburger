@@ -338,8 +338,13 @@ body > .wrapper .l-sidebar {
 }
 .c-searchBox p {
   position: absolute;
-  top: 11px;
-  left: 5px;
+  top: calc(50% - 12px);
+  left: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .c-searchBox p {
+    left: 1.2rem;
+  }
 }
 
 /*=======================
@@ -502,18 +507,17 @@ body > .wrapper .l-sidebar {
 }
 .p-header__search form input {
   width: 57.6vw;
-  padding: 2.6666666667vw 1.3333333333vw 2.6666666667vw 9.0666666667vw;
+  padding: 1.1rem 0.5rem 1.1rem 2.9rem;
 }
 @media screen and (min-width: 768px) {
   .p-header__search form input {
     width: 47.4820143885vw;
-    padding: 1.3189448441vw 1.4388489209vw 1.3189448441vw 4.3165467626vw;
+    padding: 1.1rem 1.2rem 1.1rem 3.6rem;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-header__search form input {
     width: 20.625vw;
-    padding: 0.5729166667vw 0.625vw 0.5729166667vw 1.875vw;
   }
 }
 .p-header__search form button {
