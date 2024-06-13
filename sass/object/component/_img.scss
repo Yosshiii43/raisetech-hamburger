@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*=======================
+  画像
+  =======================*/
+  @use "../../foundation/forwords" as fw;
+
+.c-img-zenpuku{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.c-img-center--62{
+    width: 62%;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
+}

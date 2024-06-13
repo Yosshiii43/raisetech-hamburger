@@ -17,6 +17,7 @@
 @use "object/component/grid";
 @use "object/component/title";
 @use "object/component/text";
+@use "object/component/hedding";
 @use "object/component/font-mplus";
 @use "object/component/font-roboto";
 @use "object/component/seachBox";
@@ -27,6 +28,15 @@
 @use "object/component/text-small";
 @use "object/component/square";
 @use "object/component/sideBySide";
+@use "object/component/blockquote";
+@use "object/component/img";
+@use "object/component/imgText";
+@use "object/component/gallery";
+@use "object/component/orderList";
+@use "object/component/unOrderList";
+@use "object/component/preformattedText";
+@use "object/component/table" as ct;
+
 
 
 //object__project
@@ -52,3 +62,8 @@
 
 
 //object__utility
+@use "object/utility/marginBottom";
+@use "object/utility/marginLeft";
+@use "object/utility/imgAspect";
+@use "object/utility/objectPosition";
+@use "object/utility/table" as ut;

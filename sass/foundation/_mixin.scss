@@ -37,7 +37,6 @@ $spDesignSize: 375;
 
 //pxをremに変換する関数
 $root-size: 10; //htmlに設定してあるfont-size
-
 @function rem($px) {
 @return math.div($px, $root-size) * 1rem;
 }

@@ -162,7 +162,7 @@ body {
   font-size: 1.6rem;
   font-family: "M PLUS 1p", sans-serif;
   color: #3C2A10;
-  line-height: 1.5;
+  line-height: 1.485;
 }
 
 img {
@@ -312,6 +312,39 @@ body > .wrapper .l-sidebar {
 }
 
 /*=======================
+  hタグ基本
+  =======================*/
+.c-hedding--h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.c-hedding--h3 {
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .c-hedding--h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+}
+
+.c-hedding--h4 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c-hedding--h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c-hedding--h6 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/*=======================
   フォントファミリー m+ 1p
   =======================*/
 .c-font-mplus {
@@ -429,6 +462,160 @@ body > .wrapper .l-sidebar {
 .c-sideBySide {
   display: flex;
   align-items: center;
+}
+
+/*=======================
+  blockquote
+  =======================*/
+.c-blockquote {
+  background: #f5f5f5;
+  padding: 3rem 1.6rem 2.7rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .c-blockquote {
+    padding: 5rem 5.6rem 5.7rem 5rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .c-blockquote {
+    padding: 5rem 6rem 4.7rem 5rem;
+  }
+}
+.c-blockquote__txt {
+  margin-bottom: 3.1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-blockquote__txt {
+    margin-bottom: 6.1rem;
+  }
+}
+.c-blockquote__footer__cite {
+  color: #4A6C9B;
+  font-style: normal;
+  -webkit-text-decoration: underline solid #4A6C9B;
+          text-decoration: underline solid #4A6C9B;
+}
+
+/*=======================
+  画像
+  =======================*/
+.c-img-zenpuku {
+  width: 100%;
+}
+.c-img-zenpuku img {
+  width: 100%;
+}
+
+.c-img-center--62 {
+  width: 62%;
+  margin: 0 auto;
+}
+.c-img-center--62 img {
+  width: 100%;
+}
+
+/*=======================
+  画像とテキストの横並び
+  =======================*/
+.c-imgText--LR, .c-imgText--RL {
+  display: flex;
+  justify-content: space-between;
+}
+.c-imgText--LR .c-imgText__img, .c-imgText--RL .c-imgText__img {
+  flex-basis: 42.27%;
+}
+@media screen and (min-width: 768px) {
+  .c-imgText--LR .c-imgText__img, .c-imgText--RL .c-imgText__img {
+    flex-basis: 42.86%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .c-imgText--LR .c-imgText__img, .c-imgText--RL .c-imgText__img {
+    flex-basis: 42.94%;
+  }
+}
+.c-imgText--LR .c-imgText__txt, .c-imgText--RL .c-imgText__txt {
+  flex-basis: 54.3%;
+}
+@media screen and (min-width: 768px) {
+  .c-imgText--LR .c-imgText__txt, .c-imgText--RL .c-imgText__txt {
+    flex-basis: 54.2%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .c-imgText--LR .c-imgText__txt, .c-imgText--RL .c-imgText__txt {
+    flex-basis: 54.18%;
+  }
+}
+
+/*=======================
+  ギャラリー配置
+  =======================*/
+.c-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .c-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .c-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*=======================
+  オーダーリスト
+  =======================*/
+.c-orderList__list {
+  list-style: decimal;
+  margin-left: 1em;
+}
+.c-orderList__child__list {
+  list-style: decimal;
+  margin: 1.7rem auto 1.7rem 1.8rem;
+}
+
+/*=======================
+  アンオーダーリスト
+  =======================*/
+.c-unOrderList__child {
+  margin: 1.7rem auto 1.7rem 1.8rem;
+}
+
+/*=======================
+  pre(そのまま表示)
+  =======================*/
+.c-preformattedText {
+  background-color: #f5f5f5;
+  padding: 5rem 5.9rem 5rem 4.9rem;
+  white-space: pre-wrap;
+}
+@media screen and (min-width: 768px) {
+  .c-preformattedText {
+    padding: 5rem 6.9rem 5rem 5rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .c-preformattedText {
+    padding: 5rem 6rem 5rem 5rem;
+  }
+}
+
+/*=======================
+  テーブル
+  =======================*/
+.c-table {
+  border-collapse: collapse;
+}
+.c-table th, .c-table td {
+  border: solid 1px #707070;
+  font-weight: 400;
+  text-align: left;
 }
 
 /*==========================
@@ -679,6 +866,26 @@ body > .wrapper .l-sidebar {
   }
 }
 
+.p-mainVisual--single {
+  width: 100%;
+  height: 22.5rem;
+  background: url(../../../img/mainvisual--single.jpg) center/200% no-repeat;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-mainVisual--single {
+    height: 50.5rem;
+    background-position: center 62%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-mainVisual--single {
+    height: 50rem;
+    background-size: 100%;
+    background-position: center 65%;
+  }
+}
+
 /*=======================
   ページタイトル
   =======================*/
@@ -742,6 +949,27 @@ body > .wrapper .l-sidebar {
   .p-pageTitle--archive p {
     margin-top: 29px;
     margin-left: 19px;
+  }
+}
+
+.p-pageTitle--single {
+  color: #FFFFFF;
+  font-size: 3.6rem;
+  position: absolute;
+  top: calc(50% - 1.8rem);
+  left: 6.9333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-pageTitle--single {
+    font-size: 6rem;
+    top: calc(50% - 3rem);
+    left: 10.3117505995vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-pageTitle--single {
+    top: calc(50% - 3rem);
+    left: 4.4791666667vw;
   }
 }
 
@@ -854,6 +1082,21 @@ body > .wrapper .l-sidebar {
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-wrapper--archive {
     paddeing: 3.28125vw 5.2083333333vw 3.3333333333vw 5.2083333333vw;
+  }
+}
+
+.p-wrapper--single {
+  background: #FFFDFA;
+  padding: 9.0666666667vw 5.3333333333vw 18.4vw;
+}
+@media screen and (min-width: 768px) {
+  .p-wrapper--single {
+    padding: 7.1942446043vw 7.1942446043vw 17.8657074341vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-wrapper--single {
+    padding: 3.28125vw 5.2083333333vw 14.2708333333vw;
   }
 }
 
@@ -1359,5 +1602,153 @@ body > .wrapper .l-sidebar {
   .p-pagination__item ~ .p-pagination__item {
     margin-left: 1.5rem;
   }
+}
+
+/*=======================
+  margin-bottom
+  =======================*/
+.u-marginBottom--28-56-56 {
+  margin-bottom: 2.8rem;
+}
+@media screen and (min-width: 768px) {
+  .u-marginBottom--28-56-56 {
+    margin-bottom: 5.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .u-marginBottom--28-56-56 {
+    margin-bottom: 5.6rem;
+  }
+}
+
+.u-marginBottom--36-62-62 {
+  margin-bottom: 3.6rem;
+}
+@media screen and (min-width: 768px) {
+  .u-marginBottom--36-62-62 {
+    margin-bottom: 6.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .u-marginBottom--36-62-62 {
+    margin-bottom: 6.2rem;
+  }
+}
+
+.u-marginBottom--30-60-60 {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .u-marginBottom--30-60-60 {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .u-marginBottom--30-60-60 {
+    margin-bottom: 6rem;
+  }
+}
+
+.u-marginBottom--30-50-60 {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .u-marginBottom--30-50-60 {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .u-marginBottom--30-50-60 {
+    margin-bottom: 6rem;
+  }
+}
+
+.u-marginBottom--33-61-54 {
+  margin-bottom: 3.3rem;
+}
+@media screen and (min-width: 768px) {
+  .u-marginBottom--33-61-54 {
+    margin-bottom: 6.1rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .u-marginBottom--33-61-54 {
+    margin-bottom: 5.4rem;
+  }
+}
+
+.u-marginBottom--57 {
+  margin-bottom: 5.7rem;
+}
+
+/*=======================
+  margin-left
+  =======================*/
+.u-marginLeft--0-50-50 {
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .u-marginLeft--0-50-50 {
+    margin-left: 5rem;
+  }
+}
+
+.u-marginLeft--1em {
+  margin-left: 1em;
+}
+
+/*=======================
+  高さ指定用
+  =======================*/
+.u-imgAspect--37 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 100/37;
+}
+
+.u-imgAspect--62 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 100/62;
+}
+
+.u-imgAspect--60 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 100/60;
+}
+
+/*=======================
+  画像トリミング位置指定
+  =======================*/
+.u-objectPosition--50-80 img {
+  -o-object-position: 50% 80%;
+     object-position: 50% 80%;
+}
+
+.u-objectPosition--50-30 img {
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
+}
+
+/*=======================
+  テーブル調整
+  =======================*/
+.u-table--2column {
+  width: 100%;
+}
+.u-table--2column th, .u-table--2column td {
+  padding-top: 2.9rem;
+  padding-bottom: 2.4rem;
+  padding-left: 2.3rem;
+}
+.u-table--2column th {
+  width: 40%;
+}
+.u-table--2column td {
+  width: 60%;
 }
 /*# sourceMappingURL=style.css.map */
