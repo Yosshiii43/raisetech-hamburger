@@ -40,6 +40,9 @@
       }
       &.is-open > .p-navbg{
         opacity: 100;
+        @include fw.mq("pc"){
+          display: none;//tabサイズからpcサイズに変更時にグレー背景消去
+        }
         }
       &.is-open > .p-nav{
           left: 100% - math.div( 328,375 ) * 100;

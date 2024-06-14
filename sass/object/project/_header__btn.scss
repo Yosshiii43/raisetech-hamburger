@@ -30,6 +30,9 @@
       display: block;
       right: 0;
       top:16px;
+      @include fw.mq("pc"){
+        display: none;//tabサイズからpcサイズに変更時に×印消去
+      }
     }
     &::before{
       transform: rotate( 45deg );

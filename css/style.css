@@ -685,6 +685,11 @@ body > .wrapper .l-sidebar {
   right: 0;
   top: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .p-header__btn.is-open::before, .p-header__btn.is-open::after {
+    display: none;
+  }
+}
 .p-header__btn.is-open::before {
   transform: rotate(45deg);
 }
@@ -857,6 +862,11 @@ body > .wrapper .l-sidebar {
 }
 .p-sidebar.is-open > .p-navbg {
   opacity: 100;
+}
+@media screen and (min-width: 1024px) {
+  .p-sidebar.is-open > .p-navbg {
+    display: none;
+  }
 }
 .p-sidebar.is-open > .p-nav {
   left: 12.5333333333%;
