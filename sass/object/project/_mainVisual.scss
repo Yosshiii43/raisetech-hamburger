@@ -47,3 +47,20 @@
         }
     }
 }
+
+.p-mainVisual--page{ //pageページ
+    width: 100%;
+    height: 22.5rem;//縦横比では文字サイズや余白がおかしくなるのでremで指定
+    background: url(../../../img/mainVisual--page.jpg) center 47% / 185% no-repeat;
+    position: relative;
+    @include fw.mq("tab"){
+        height: 50.5rem;
+        background-size: 187%;
+        background-position: center 47%;
+        @include fw.mq("pc"){
+            height: 50rem;
+            background-size: 100%;
+            background-position: center 48%;
+        }
+    }
+}

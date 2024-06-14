@@ -56,7 +56,7 @@
     }
 }
 
-.p-pageTitle--single{ //singleページ
+.p-pageTitle--single,.p-pageTitle--page{ //投稿ページ,固定ページ
     color: fw.$color--white;
     font-size: 3.6rem;
     position: absolute;

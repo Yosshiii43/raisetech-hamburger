@@ -919,6 +919,27 @@ body > .wrapper .l-sidebar {
   }
 }
 
+.p-mainVisual--page {
+  width: 100%;
+  height: 22.5rem;
+  background: url(../../../img/mainVisual--page.jpg) center 47%/185% no-repeat;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-mainVisual--page {
+    height: 50.5rem;
+    background-size: 187%;
+    background-position: center 47%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-mainVisual--page {
+    height: 50rem;
+    background-size: 100%;
+    background-position: center 48%;
+  }
+}
+
 /*=======================
   ページタイトル
   =======================*/
@@ -985,7 +1006,7 @@ body > .wrapper .l-sidebar {
   }
 }
 
-.p-pageTitle--single {
+.p-pageTitle--single, .p-pageTitle--page {
   color: #FFFFFF;
   font-size: 3.6rem;
   position: absolute;
@@ -993,14 +1014,14 @@ body > .wrapper .l-sidebar {
   left: 6.9333333333vw;
 }
 @media screen and (min-width: 768px) {
-  .p-pageTitle--single {
+  .p-pageTitle--single, .p-pageTitle--page {
     font-size: 6rem;
     top: calc(50% - 3rem);
     left: 10.3117505995vw;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
-  .p-pageTitle--single {
+  .p-pageTitle--single, .p-pageTitle--page {
     top: calc(50% - 3rem);
     left: 4.4791666667vw;
   }
@@ -1130,6 +1151,21 @@ body > .wrapper .l-sidebar {
 @media screen and (min-width: 768px) and (min-width: 1024px) {
   .p-wrapper--single {
     padding: 3.28125vw 5.2083333333vw 14.2708333333vw;
+  }
+}
+
+.p-wrapper--page {
+  background: #FFFDFA;
+  padding: 9.0666666667vw 5.3333333333vw 18.4vw;
+}
+@media screen and (min-width: 768px) {
+  .p-wrapper--page {
+    padding: 7.1942446043vw 7.1942446043vw 17.8657074341vw;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .p-wrapper--page {
+    padding: 3.1770833333vw 5.2083333333vw 14.4270833333vw;
   }
 }
 
