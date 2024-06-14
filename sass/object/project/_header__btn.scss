@@ -8,13 +8,17 @@
   position: absolute;
   font-size: 2.0rem;
   color: fw.$color--darkGray;
-  top: fw.sp-vw( 8 );
-  right: fw.sp-vw( 8 );
+  //top: fw.sp-vw( 8 );
+  top: 0.8rem;
+  //right: fw.sp-vw( 8 );
+  right: 0.8rem;
   z-index: 1000;
   @include fw.mq("tab"){
     font-size: 3.4rem;
-    top: fw.tab-vw( 20 );
-    right: fw.tab-vw( 25 );
+    //top: fw.tab-vw( 20 );
+    top: 2.0rem;
+    //right: fw.tab-vw( 25 );
+    right: 2.5rem;
     @include fw.mq("pc"){
       font-size: 0;
       }
