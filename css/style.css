@@ -821,22 +821,24 @@ body > .wrapper .l-sidebar {
   position: relative;
 }
 .p-sidebar .p-navbg, .p-sidebar .p-nav {
-  transition: all 300ms 0s ease-out;
   height: 100vh;
   position: fixed;
   overflow-y: auto;
-  left: 100%;
 }
 .p-sidebar .p-navbg {
+  transition: all 300ms 0ms ease-out;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.502);
   z-index: 100;
+  opacity: 0;
 }
 .p-sidebar .p-nav {
+  transition: all 300ms 1ms ease-out;
   width: 87.4666666667vw;
   padding-top: 47.4666666667vw;
   background-color: #F2EDE9;
   z-index: 200;
+  left: 100%;
 }
 @media screen and (min-width: 768px) {
   .p-sidebar .p-nav {
@@ -854,14 +856,14 @@ body > .wrapper .l-sidebar {
   }
 }
 .p-sidebar.is-open > .p-navbg {
-  left: 0;
+  opacity: 100;
 }
 .p-sidebar.is-open > .p-nav {
-  left: 12.5333333333vw;
+  left: 12.5333333333%;
 }
 @media screen and (min-width: 768px) {
   .p-sidebar.is-open > .p-nav {
-    left: 54.6762589928vw;
+    left: 55.9952038369%;
   }
 }
 .p-sidebar h2 {
