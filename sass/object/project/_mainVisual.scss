@@ -31,6 +31,15 @@
             background-size: cover;
         }
     }
+    &::before{//archiveは背景画像に黒の透過を乗せる
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
 .p-mainVisual--single{ //singleページ
     width: 100%;
