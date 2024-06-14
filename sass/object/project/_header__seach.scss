@@ -5,7 +5,6 @@
   @use "../../foundation/forwords" as fw;
 
 .p-header__search{
-    //margin: fw.sp-vw( 40 ) auto 0;
     margin: 4.0rem auto 0;
     @include fw.mq("tab"){
       margin-top: 3.8rem;
