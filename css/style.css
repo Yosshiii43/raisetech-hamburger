@@ -315,8 +315,13 @@ body > .wrapper .l-sidebar {
   hタグ基本
   =======================*/
 .c-hedding--h2 {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .c-hedding--h2 {
+    font-size: 3.6rem;
+  }
 }
 
 .c-hedding--h3 {
@@ -388,6 +393,15 @@ body > .wrapper .l-sidebar {
   border-radius: 10px;
   background: linear-gradient(to right, #DED8D3, #F2EDE9);
   font-weight: 700;
+  text-align: center;
+}
+
+.c-button--reverse {
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background: linear-gradient(to left, #DED8D3, #F2EDE9);
+  font-weight: 700;
+  text-align: center;
 }
 
 /*=======================
@@ -506,11 +520,21 @@ body > .wrapper .l-sidebar {
   width: 100%;
 }
 
-.c-img-center--62 {
-  width: 62%;
+.c-img-center--medium {
+  width: 79.7%;
   margin: 0 auto;
 }
-.c-img-center--62 img {
+@media screen and (min-width: 768px) {
+  .c-img-center--medium {
+    width: 81.37%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .c-img-center--medium {
+    width: 42.94%;
+  }
+}
+.c-img-center--medium img {
   width: 100%;
 }
 
@@ -522,7 +546,7 @@ body > .wrapper .l-sidebar {
   justify-content: space-between;
 }
 .c-imgText--LR .c-imgText__img, .c-imgText--RL .c-imgText__img {
-  flex-basis: 42.27%;
+  flex-basis: 42.98%;
 }
 @media screen and (min-width: 768px) {
   .c-imgText--LR .c-imgText__img, .c-imgText--RL .c-imgText__img {
@@ -535,7 +559,7 @@ body > .wrapper .l-sidebar {
   }
 }
 .c-imgText--LR .c-imgText__txt, .c-imgText--RL .c-imgText__txt {
-  flex-basis: 54.3%;
+  flex-basis: 54.62%;
 }
 @media screen and (min-width: 768px) {
   .c-imgText--LR .c-imgText__txt, .c-imgText--RL .c-imgText__txt {
@@ -575,9 +599,11 @@ body > .wrapper .l-sidebar {
   list-style: decimal;
   margin-left: 1em;
 }
+.c-orderList__child {
+  margin: 1.7rem auto 1.7rem 1.8rem;
+}
 .c-orderList__child__list {
   list-style: decimal;
-  margin: 1.7rem auto 1.7rem 1.8rem;
 }
 
 /*=======================
@@ -593,7 +619,8 @@ body > .wrapper .l-sidebar {
 .c-preformattedText {
   background-color: #f5f5f5;
   padding: 5rem 5.9rem 5rem 4.9rem;
-  white-space: pre-wrap;
+  white-space: pre-line;
+  overflow-wrap: break-word;
 }
 @media screen and (min-width: 768px) {
   .c-preformattedText {
@@ -616,6 +643,13 @@ body > .wrapper .l-sidebar {
   border: solid 1px #707070;
   font-weight: 400;
   text-align: left;
+}
+
+/*=======================
+  太字
+  =======================*/
+.c-bold {
+  font-weight: 700;
 }
 
 /*==========================
@@ -709,7 +743,6 @@ body > .wrapper .l-sidebar {
 }
 .p-header__search form button {
   display: block;
-  text-align: center;
   width: 23.4666666667vw;
   color: #707070;
 }
@@ -1681,6 +1714,10 @@ body > .wrapper .l-sidebar {
   margin-bottom: 5.7rem;
 }
 
+.u-marginBottom--60 {
+  margin-bottom: 6rem;
+}
+
 /*=======================
   margin-left
   =======================*/
@@ -1745,10 +1782,42 @@ body > .wrapper .l-sidebar {
   padding-bottom: 2.4rem;
   padding-left: 2.3rem;
 }
+@media screen and (min-width: 768px) {
+  .u-table--2column th, .u-table--2column td {
+    padding-left: 3rem;
+  }
+}
 .u-table--2column th {
   width: 40%;
 }
+@media screen and (min-width: 768px) {
+  .u-table--2column th {
+    width: 30%;
+  }
+}
 .u-table--2column td {
   width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .u-table--2column td {
+    width: 70%;
+  }
+}
+
+/*=======================
+  ボタン調整
+  =======================*/
+.u-button--middle {
+  padding-top: 2.9rem;
+  padding-bottom: 2.8rem;
+  width: 100%;
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .u-button--middle {
+    padding-top: 4.2rem;
+    padding-bottom: 3.8rem;
+    width: 42.9rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

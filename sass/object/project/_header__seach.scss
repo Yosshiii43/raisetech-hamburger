@@ -35,7 +35,6 @@
   }
   button{
     display: block;
-    text-align: center;
     width: fw.sp-vw( 88 );
     color: fw.$color--darkGray;
       @include fw.mq("tab"){

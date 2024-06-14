@@ -21,7 +21,7 @@
 @use "object/component/font-mplus";
 @use "object/component/font-roboto";
 @use "object/component/seachBox";
-@use "object/component/button";
+@use "object/component/button" as cb;
 @use "object/component/gnav";
 @use "object/component/horizon";
 @use "object/component/lineHeightWide";
@@ -36,6 +36,7 @@
 @use "object/component/unOrderList";
 @use "object/component/preformattedText";
 @use "object/component/table" as ct;
+@use "object/component/bold";
 
 
 
@@ -67,3 +68,4 @@
 @use "object/utility/imgAspect";
 @use "object/utility/objectPosition";
 @use "object/utility/table" as ut;
+@use "object/utility/button" as ub;
