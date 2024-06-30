@@ -824,6 +824,12 @@ body > .wrapper .l-sidebar {
   =======================*/
 .p-sidebar {
   position: relative;
+  visibility: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .p-sidebar {
+    visibility: visible;
+  }
 }
 .p-sidebar .p-navbg, .p-sidebar .p-nav {
   height: 100vh;
@@ -836,7 +842,6 @@ body > .wrapper .l-sidebar {
   background-color: rgba(0, 0, 0, 0.502);
   z-index: 100;
   opacity: 0;
-  visibility: hidden;
 }
 .p-sidebar .p-nav {
   transition: all 300ms 1ms ease-out;
@@ -861,9 +866,11 @@ body > .wrapper .l-sidebar {
     transition: inherit;
   }
 }
+.p-sidebar.is-open {
+  visibility: visible;
+}
 .p-sidebar.is-open > .p-navbg {
   opacity: 1;
-  visibility: visible;
 }
 @media screen and (min-width: 1024px) {
   .p-sidebar.is-open > .p-navbg {

@@ -7,6 +7,10 @@
 
 .p-sidebar{
   position: relative;
+  visibility: hidden;
+  @include fw.mq("pc"){
+    visibility: visible;
+  }
   .p-navbg, .p-nav{
       height: 100vh;
       position: fixed;
@@ -18,7 +22,6 @@
         background-color: rgba(0,0,0,0.502); 
         z-index: 100;
         opacity: 0;
-        visibility: hidden;
       }
       .p-nav{
         transition: all 300ms 1ms ease-out;
@@ -39,9 +42,11 @@
           }
         }
       }
+      &.is-open{
+        visibility: visible;
+      }
       &.is-open > .p-navbg{
         opacity: 1;
-        visibility: visible;
         @include fw.mq("pc"){
           display: none;//tabサイズからpcサイズに変更時にグレー背景消去
         }
